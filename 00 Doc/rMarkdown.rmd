@@ -1,5 +1,5 @@
 ---
-title: "Tableau Project 2"
+title: "Tableau Project 3"
 output: html_document
 ---
 Created by: Natasha Halfin, Evan Johnston, and Kaylyn Zvonek 
@@ -17,30 +17,34 @@ library("tidyr")
 library("dplyr")
 library("grid")
 ```
-
+While TopCompanies does not include every company in a state, it is interesting to view the statistics of states that are doing well within the top companies list. For instances if there are more companies from a particular state on the top 200 companies list, it would be interesting to look at how well people on average are paid within that state. 
 ```{r, eval = TRUE, echo=TRUE}
-source("../01 SQL Crosstabs/sqlCrosstabs.R")
+
 
 ```
 
 
-This rank crosstab partitions by Industry and ranks each Company within the Industry by Revenue.  
+From the TopCompanies data set we found the number of companies based on state and compared it to the StateEmployment's average company payroll for that state. 
 ```{r, eval=TRUE, echo=TRUE}
-head(dfRANKREVENUE)
+
+```
+
+From the TopCompanies data set we found the average Top 200 company's revenue based on state and compared it to the StateEmployment set's average payroll based on state. We thought it would be interesting to see if the states with more top companies paid higher. Conneticut by far the highest revenue which could be attributed to companies like GE being based there.  
+```{r, eval=TRUE, echo=TRUE}
+
 ```
 
 
-This crosstab partitions companies by State, is sorted by Growth, then reports the max Growth for each State in a max_Growth column. Then another column is created with the difference between the company with the maximum growth and all other companies within the State. 
+From the TopCompanies data set we found the average growth of each state and compared it to the StateEmployment's number of establishments by state. We thought it would be interesting to see if the states with more growth had  
 ```{r, eval=TRUE, echo=TRUE}
-head(dfMAX)
+
 ```
-This crosstab partitions the companies by industry then returns the nth highest growth in each industry. In our case it returns the 2nd highest growth for each industry in a column called Second_Growth. 
+
+
+From the TopCompanies data set we found the number of companies based on state and compare it to the StateEmployment's employment numbers. 
 ```{r, eval=TRUE, echo=TRUE}
-head(dfnth)
+
 ```
-This crosstab first partitions the companies by state and orders them by revenue. Then it gives the cumulative distribution of the revenue of each company within the state partition.
-```{r, eval=TRUE, echo=TRUE}
-head(dfcume_dist)
-```
+
 
 
