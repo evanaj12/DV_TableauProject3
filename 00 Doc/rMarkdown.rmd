@@ -12,18 +12,22 @@ While TopCompanies does not include every company in a state, it is interesting 
 
 From the TopCompanies data set we found the number of companies based on state and compared it to the StateTotal's average company payroll for that state. We can witness a linear relationship between the two factors.
 ![](./Sheet1.png) 
+![](./NumCosvsAvgPayroll.png)
 ***********************************************
 
 From the TopCompanies data set we found the average Top 5000 company revenue based on state and compared it to the StateTotal set's average payroll based on state. We thought it would be interesting to see if the states with more top companies paid more. Connecticut by far has the highest revenue which could be attributed to companies like GE being based there. However, we found that states with more top performing companies do not necessarily pay more. 
 
 ![](./Sheet2.png) 
+![](./AvgRevenuevsAvgPayroll.png) 
 ************************************************
 
 From the TopCompanies data set we found the average growth of each state and compared it to the StateTotals's number of establishments by state. We thought it would be interesting to see if the states with more growth had more establishments. However, this was not the case, revealing that growth may be concentrated within a smaller number of establishments. 
 
-![](./Sheet3.png) 
+![](./Sheet3.png)
+![](./AvgGrowthvsNumCos.png) 
 ************************************************
 
 From the TopCompanies data set we found the number of companies based on state and compared it to the StateTotal's average employment by state. As we predicted, there is a linear relationship.
 
-![](./Sheet4.png) 
+![](./Sheet4.png)
+![](./NumCosvsNumEmps.png) 
